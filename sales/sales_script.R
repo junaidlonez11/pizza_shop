@@ -19,6 +19,23 @@ for (salesdata in all_sales){
 # Use a tidyverse join to join all the data together into one file
 # called sales_data, then run the rest of the code
 
+sales_data <- datafile %>% 
+  full_join(dataset_1, by = c("day", "month", "year", "pizza", "number")) %>% 
+  full_join(dataset_2, by = c("day", "month", "year", "pizza", "number")) %>% 
+  full_join(dataset_3, by = c("day", "month", "year", "pizza", "number")) %>% 
+  full_join(dataset_4, by = c("day", "month", "year", "pizza", "number")) %>% 
+  full_join(dataset_5, by = c("day", "month", "year", "pizza", "number")) %>% 
+  full_join(dataset_6, by = c("day", "month", "year", "pizza", "number")) %>% 
+  full_join(dataset_7, by = c("day", "month", "year", "pizza", "number")) %>% 
+  full_join(dataset_8, by = c("day", "month", "year", "pizza", "number")) %>% 
+  full_join(dataset_9, by = c("day", "month", "year", "pizza", "number")) %>% 
+  full_join(dataset_10, by = c("day", "month", "year", "pizza", "number")) %>% 
+  full_join(dataset_11, by = c("day", "month", "year", "pizza", "number")) %>% 
+  full_join(dataset_12, by = c("day", "month", "year", "pizza", "number")) %>% 
+  full_join(dataset_13, by = c("day", "month", "year", "pizza", "number")) %>% 
+  full_join(dataset_14, by = c("day", "month", "year", "pizza", "number")) %>% 
+  full_join(dataset_15, by = c("day", "month", "year", "pizza", "number")) %>% 
+  full_join(dataset_16, by = c("day", "month", "year", "pizza", "number"))
 
 
 ########################################
